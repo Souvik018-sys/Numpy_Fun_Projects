@@ -28,7 +28,7 @@ We have a dataset representing student information:
 8. **Reverse** the 1D array.
 
 
-## 🛠 Technologies Used
+##  Technologies Used
 - **Python 3**
 - **NumPy** (for array manipulation)
 
