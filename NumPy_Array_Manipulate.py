@@ -12,8 +12,9 @@ new_arr_students=np.insert(students,1,[206,22,95],axis=0)
 print("After inserting new student info :\n",new_arr_students)
 
 # Delete the student with id 203
-new_arr_students1=np.delete(new_arr_students,3,axis=0)
-print("After deleting the student info :\n",new_arr_students1)
+index_to_remove = np.where(new_arr_students[:,0] == 203)[0][0]
+new_arr_students1 = np.delete(new_arr_students, index_to_remove, axis=0)
+print("After deleting the student with id 203:\n",new_arr_students1)
 
 # Append a new column for attadance [80,85,88,90,95]
 attandance=np.array([80,85,88,90,95]).reshape(-1,1)
